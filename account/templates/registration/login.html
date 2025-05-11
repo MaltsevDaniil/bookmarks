@@ -4,6 +4,15 @@
 
 {% block content %}
 <h1>Log-in</h1>
+<div class="social">
+    <ul>
+        <li class="google">
+            <a href="{% url 'social:begin' 'google-oauth2' %}">
+                    Sign in with Google
+            </a>
+        </li>
+    </ul>
+</div>
 {% if form.errors %}
     <p>
         Your username and password didn't match.
@@ -21,6 +30,7 @@
         <input type="hidden" name="next" value="{{ next }}" />
         <p><input type="submit" value="Log-in"></p>
     </form>
+
     <p>
         <a href="{% url 'password_reset' %}">
             Forgotten your password?
