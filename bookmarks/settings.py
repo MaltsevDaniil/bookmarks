@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["mysite.com", 'localhost', '127.0.0.1']
 
-
+#gsdinj
 # Application definition
 
 INSTALLED_APPS = [
